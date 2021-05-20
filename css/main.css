@@ -1,12 +1,12 @@
 
-body {
+header {
   display: flex;
   justify-content: flex-end;
   margin: 30px;
 }
 
 .button {
-  outline: 1px solid red;
+  outline: 3px solid blue;
 }
 
 nav {
@@ -21,4 +21,15 @@ nav {
   height: 7px;
   width: 50px;
   margin: 7px;
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  text-transform:uppercase;
+  color: turquoise;
+  font-size: 90px;
 }
