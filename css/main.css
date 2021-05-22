@@ -31,10 +31,10 @@ nav {
 }
 
 h2 {
-  background: gray;
+  background: blue;
   padding: 10px 20px;
   margin: 0px;
-  border: solid 1px gray;
+  border: solid 1px blue;
 }
 
 .hide {
