@@ -23,10 +23,17 @@ nav {
   margin: 7px;
 }
 
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
 .dropdown {
   display: flex;
   align-content: flex-end;
   flex-flow: column wrap;
+  z-index: 1;
+  position: absolute;
   padding: 3px 47px 47px 47px;
 }
 
@@ -46,4 +53,11 @@ h1 {
   text-transform:uppercase;
   color: turquoise;
   font-size: 90px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
 }
