@@ -12,19 +12,16 @@ const menu = button.addEventListener("click", function () {
     };
 });
 
-const orange = document.querySelectorAll(".orange");
-const blue = document.querySelectorAll(".blue");
-
-orange.forEach(function(o, index) {
-    o.addEventListener("click", function() {
-        o.style.background = "orange";
-        o.innerText = "";
+const click = function (color) {
+    let color1 = document.querySelectorAll(`.${color}`);
+    
+    color1.forEach(function(c1, index) {
+        c1.addEventListener("click", function() {
+            c1.style.background = `${color}`;
+            c1.innerText = "";
+        });
     });
-});
+};
 
-blue.forEach(function(b, index) {
-    b.addEventListener("click", function() {
-        b.style.background = "blue";
-        b.innerText = "";
-    });
-});
+click("orange");
+click("blue");
