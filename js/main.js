@@ -25,3 +25,9 @@ const click = function (color) {
 
 click("orange");
 click("blue");
+click("black");
+click("green");
+click("yellow");
+click("purple");
+click("turquoise");
+click("red");

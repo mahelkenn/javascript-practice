@@ -75,7 +75,15 @@ h1 {
   flex-flow: row wrap;
 }
 
-.orange {
+.color {
+  background-color: white;
+  width: 10%;
+  padding-top: 10%;
+  outline: 1px solid black;
+  text-align: center;
+}
+
+/* .orange {
   background-color: white;
   width: 32%;
   padding-top: 32%;
@@ -89,4 +97,4 @@ h1 {
   padding-top: 32%;
   outline: 3px solid black;
   text-align: center;
-}
+} */
