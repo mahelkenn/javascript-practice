@@ -61,3 +61,30 @@ h1 {
   align-items: center;
   flex-flow: column wrap;
 }
+
+.content-wrapper {
+  display:flex;
+  justify-content: center;
+}
+
+.coloring-game {
+  width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.orange {
+  background-color: white;
+  width: 32%;
+  padding-top: 32%;
+  outline: 3px solid black;
+}
+
+.blue {
+  background-color: white;
+  width: 32%;
+  padding-top: 32%;
+  outline: 3px solid black;
+}
