@@ -18,11 +18,13 @@ const blue = document.querySelectorAll(".blue");
 orange.forEach(function(o, index) {
     o.addEventListener("click", function() {
         o.style.background = "orange";
+        o.innerText = "";
     });
 });
 
 blue.forEach(function(b, index) {
     b.addEventListener("click", function() {
         b.style.background = "blue";
+        b.innerText = "";
     });
 });
