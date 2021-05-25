@@ -73,6 +73,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+  margin-bottom: 40px;
 }
 
 .color {
@@ -83,18 +84,23 @@ h1 {
   text-align: center;
 }
 
-/* .orange {
-  background-color: white;
-  width: 32%;
-  padding-top: 32%;
-  outline: 3px solid black;
-  text-align:center
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  border-top: 5px solid black;
 }
 
-.blue {
-  background-color: white;
-  width: 32%;
-  padding-top: 32%;
-  outline: 3px solid black;
-  text-align: center;
-} */
+.counter h3 {
+  font-size: 40px;
+}
+
+.counter p {
+  font-size: 100px;
+  margin: 0px;
+}
+
+.buttons {
+  margin-bottom: 50px;
+}
