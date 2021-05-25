@@ -98,9 +98,16 @@ h1 {
 
 .counter p {
   font-size: 100px;
-  margin: 0px;
+  margin: 0px 0px 40px 0px;
 }
 
 .buttons {
+  width: 50%;
   margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  font-size: 30px;
 }
