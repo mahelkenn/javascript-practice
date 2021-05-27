@@ -62,9 +62,10 @@ h1 {
   flex-flow: column wrap;
 }
 
-.content-wrapper {
+.coloring-content-wrapper {
   display:flex;
   justify-content: center;
+  border-top: 5px solid black;
 }
 
 .coloring-game {
@@ -73,7 +74,7 @@ h1 {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 
 .color {
@@ -110,4 +111,8 @@ h1 {
 
 .button {
   font-size: 30px;
+}
+
+.reviews {
+  border-top: 5px solid black;
 }
