@@ -116,3 +116,15 @@ h1 {
 .reviews {
   border-top: 5px solid black;
 }
+
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.buttons {
+  width: 10%;
+  display: flex;
+  justify-content: space-around;
+}
