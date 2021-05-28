@@ -68,3 +68,17 @@ const color = function(counterValue) {
         counter.style.color = "black";
     }
 }
+
+// Review Section //
+const back = document.querySelector("#back");
+const forward = document.querySelector("#forward");
+const reviewDescription = document.querySelector("#review-descrip");
+
+back.addEventListener("click", function() {
+    reviewDescription.innerText = "Last Review";
+});
+
+forward.addEventListener("click", function() {
+    reviewDescription.innerText = "Next Review"
+});
+
