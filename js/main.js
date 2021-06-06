@@ -73,13 +73,18 @@ const color = function(counterValue) {
 const back = document.querySelector("#back");
 const forward = document.querySelector("#forward");
 const reviewDescription = document.querySelector("#review-descrip");
+const name = document.querySelector(".name");
 
 back.addEventListener("click", function() {
-    reviewDescription.innerText = "Last Review";
+    let p = pickReview();
+    name.innerText = `${p.name}`;
+    reviewDescription.innerText = `${p.review}`;
 });
 
 forward.addEventListener("click", function() {
-    reviewDescription.innerText = "Next Review"
+    let p = pickReview();
+    name.innerText = `${p.name}`;
+    reviewDescription.innerText = `${p.review}`;
 });
 
 const reviewDetails = function(name, reviewDescrip) {
@@ -95,4 +100,10 @@ const barb = reviewDetails("Barb", "Best thing ever");
 const peter = reviewDetails("Peter", "Not my fave");
 const jan = reviewDetails("Jan", "Can't wait to return!");
 
-console.log(tom, barb, peter, jan);
+const reviewers = [tom, barb, peter, jan];
+
+const pickReview = function () {
+    let random = Math.random() * 4;
+    let index = Math.floor(random);
+    return reviewers[index];
+};
