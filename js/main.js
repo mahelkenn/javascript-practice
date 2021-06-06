@@ -82,3 +82,17 @@ forward.addEventListener("click", function() {
     reviewDescription.innerText = "Next Review"
 });
 
+const reviewDetails = function(name, reviewDescrip) {
+    const review = {
+        name: name,
+        review: reviewDescrip
+    }
+    return review;
+};
+
+const tom = reviewDetails("Tom", "LOVE IT");
+const barb = reviewDetails("Barb", "Best thing ever");
+const peter = reviewDetails("Peter", "Not my fave");
+const jan = reviewDetails("Jan", "Can't wait to return!");
+
+console.log(tom, barb, peter, jan);
