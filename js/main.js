@@ -107,3 +107,25 @@ const pickReview = function () {
     let index = Math.floor(random);
     return reviewers[index];
 };
+
+// Quiz Section //
+const one = document.querySelector("#one");
+const two = document.querySelector("#two");
+const three = document.querySelector("#three");
+const four = document.querySelector("#four");
+
+one.addEventListener("click", function() {
+    console.log("Nope!")
+});
+
+two.addEventListener("click", function() {
+    console.log("Nope!")
+});
+
+three.addEventListener("click", function() {
+    console.log("Nope!")
+});
+
+four.addEventListener("click", function() {
+    console.log("You are right!")
+});
