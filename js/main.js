@@ -113,19 +113,22 @@ const one = document.querySelector("#one");
 const two = document.querySelector("#two");
 const three = document.querySelector("#three");
 const four = document.querySelector("#four");
+const right = document.querySelector(".right");
+const wrong = document.querySelector(".wrong");
 
 one.addEventListener("click", function() {
-    console.log("Nope!")
+    wrong.classList.remove("hide");
 });
 
 two.addEventListener("click", function() {
-    console.log("Nope!")
+    wrong.classList.remove("hide");
 });
 
 three.addEventListener("click", function() {
-    console.log("Nope!")
+    wrong.classList.remove("hide");
 });
 
 four.addEventListener("click", function() {
-    console.log("You are right!")
+    wrong.classList.add("hide");
+    right.classList.remove("hide");
 });
