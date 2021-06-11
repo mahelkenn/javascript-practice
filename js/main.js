@@ -109,26 +109,32 @@ const pickReview = function () {
 };
 
 // Quiz Section //
-const one = document.querySelector("#one");
-const two = document.querySelector("#two");
-const three = document.querySelector("#three");
-const four = document.querySelector("#four");
-const right = document.querySelector(".right");
-const wrong = document.querySelector(".wrong");
+// const one = document.querySelector("#one");
+// const two = document.querySelector("#two");
+// const three = document.querySelector("#three");
+// const four = document.querySelector("#four");
+// const right = document.querySelector(".right");
+// const wrong = document.querySelector(".wrong");
 
-one.addEventListener("click", function() {
-    wrong.classList.remove("hide");
-});
+// one.addEventListener("click", function() {
+//     wrong.classList.remove("hide");
+// });
 
-two.addEventListener("click", function() {
-    wrong.classList.remove("hide");
-});
+// two.addEventListener("click", function() {
+//     wrong.classList.remove("hide");
+// });
 
-three.addEventListener("click", function() {
-    wrong.classList.remove("hide");
-});
+// three.addEventListener("click", function() {
+//     wrong.classList.remove("hide");
+// });
 
-four.addEventListener("click", function() {
-    wrong.classList.add("hide");
-    right.classList.remove("hide");
-});
+// four.addEventListener("click", function() {
+//     wrong.classList.add("hide");
+//     right.classList.remove("hide");
+// });
+
+const submit = document.querySelector("#submit");
+
+submit.addEventListener("click", function() {
+    console.log(choice.value);
+})
