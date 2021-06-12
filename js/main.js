@@ -109,32 +109,18 @@ const pickReview = function () {
 };
 
 // Quiz Section //
-// const one = document.querySelector("#one");
-// const two = document.querySelector("#two");
-// const three = document.querySelector("#three");
-// const four = document.querySelector("#four");
-// const right = document.querySelector(".right");
-// const wrong = document.querySelector(".wrong");
-
-// one.addEventListener("click", function() {
-//     wrong.classList.remove("hide");
-// });
-
-// two.addEventListener("click", function() {
-//     wrong.classList.remove("hide");
-// });
-
-// three.addEventListener("click", function() {
-//     wrong.classList.remove("hide");
-// });
-
-// four.addEventListener("click", function() {
-//     wrong.classList.add("hide");
-//     right.classList.remove("hide");
-// });
-
 const submit = document.querySelector("#submit");
+const right = document.querySelector(".right");
+const wrong = document.querySelector(".wrong");
 
 submit.addEventListener("click", function() {
-    console.log(choice.value);
+    let value = document.querySelector('input[name="choice"]:checked').value;
+    if (value==1959) {
+        wrong.classList.add("hide");
+        right.classList.remove("hide");
+    }
+    else {
+        right.classList.add("hide");
+        wrong.classList.remove("hide");
+    }
 })
