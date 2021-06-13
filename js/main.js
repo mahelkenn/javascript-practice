@@ -112,12 +112,14 @@ const pickReview = function () {
 const submit = document.querySelector("#submit");
 const right = document.querySelector(".right");
 const wrong = document.querySelector(".wrong");
+const next = document.querySelector("#nextQuestion");
 
 submit.addEventListener("click", function() {
     let value = document.querySelector('input[name="choice"]:checked').value;
     if (value==1959) {
         wrong.classList.add("hide");
         right.classList.remove("hide");
+        next.classList.remove("hide");
     }
     else {
         right.classList.add("hide");
