@@ -1,4 +1,4 @@
-// Dropdown menu section //
+// Dropdown menu section // --------------------------------------------------------------------------
 const button = document.querySelector(".button");
 const dropdown = document.querySelector(".dropdown");
 
@@ -12,7 +12,7 @@ const menu = button.addEventListener("click", function () {
     };
 });
 
-// Coloring Section //
+// Coloring Section // --------------------------------------------------------------------------
 
 const click = function (color) {
     let color1 = document.querySelectorAll(`.${color}`);
@@ -34,7 +34,7 @@ click("purple");
 click("turquoise");
 click("red");
 
-// Counter Section //
+// Counter Section // --------------------------------------------------------------------------
 const resetButton = document.querySelector("#reset");
 const increaseButton = document.querySelector("#increase");
 const decreaseButton = document.querySelector("#decrease");
@@ -69,7 +69,7 @@ const color = function(counterValue) {
     }
 }
 
-// Review Section //
+// Review Section // --------------------------------------------------------------------------
 const back = document.querySelector("#back");
 const forward = document.querySelector("#forward");
 const reviewDescription = document.querySelector("#review-descrip");
@@ -108,7 +108,7 @@ const pickReview = function () {
     return reviewers[index];
 };
 
-// Quiz Section //
+// Quiz Section // --------------------------------------------------------------------------
 const submit = document.querySelector("#submit");
 const right = document.querySelector(".right");
 const wrong = document.querySelector(".wrong");
@@ -125,4 +125,16 @@ submit.addEventListener("click", function() {
         right.classList.add("hide");
         wrong.classList.remove("hide");
     }
-})
+});
+
+const number = document.querySelector("#num");
+const question = document.querySelector("#question");
+let i = 2;
+
+const createquestion = 1
+
+next.addEventListener("click", function() {
+    number.innerText = `Question ${i}`;
+    i += 1;
+    question.innerText = questions[i];
+});
