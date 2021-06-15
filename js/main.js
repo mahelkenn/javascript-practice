@@ -131,10 +131,22 @@ const number = document.querySelector("#num");
 const question = document.querySelector("#question");
 let i = 2;
 
-const createquestion = 1
+const createQuestion = function(q, a1, a2, a3, a4, correct) {
+    const quesAndAns = {
+        q: q,
+        a1: a1,
+        a2: a2,
+        a3: a3,
+        a4: a4,
+        correct: correct
+    };
+    return quesAndAns;
+};
 
 next.addEventListener("click", function() {
     number.innerText = `Question ${i}`;
     i += 1;
     question.innerText = questions[i];
 });
+
+console.log(createQuestion("What is the best color?", "blue", "green", "yellow", "none of the above", 4));
