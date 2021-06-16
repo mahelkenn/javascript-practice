@@ -146,7 +146,10 @@ const createQuestion = function(q, a1, a2, a3, a4, correct) {
 next.addEventListener("click", function() {
     number.innerText = `Question ${i}`;
     i += 1;
-    question.innerText = questions[i];
+    question.innerText = colorQuestion["q"];
 });
 
-console.log(createQuestion("What is the best color?", "blue", "green", "yellow", "none of the above", 4));
+const colorQuestion = createQuestion("What is the best color?", "blue", "green", "yellow", "none of the above", 4);
+console.log(colorQuestion);
+
+console.log(colorQuestion["q"]);
