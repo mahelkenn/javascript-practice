@@ -113,6 +113,12 @@ const submit = document.querySelector("#submit");
 const right = document.querySelector(".right");
 const wrong = document.querySelector(".wrong");
 const next = document.querySelector("#nextQuestion");
+const one = document.querySelector("#one");
+const two = document.querySelector("#two");
+const three = document.querySelector("#three");
+const four = document.querySelector("#four");
+
+console.log(one);
 
 submit.addEventListener("click", function() {
     let value = document.querySelector('input[name="choice"]:checked').value;
@@ -147,6 +153,10 @@ next.addEventListener("click", function() {
     number.innerText = `Question ${i}`;
     i += 1;
     question.innerText = allQuestions[i-2].q;
+    one.innerText = allQuestions[i-2].a1;
+    two.innerText = allQuestions[i-2].a2;
+    three.innerText = allQuestions[i-2].a3;
+    four.innerText = allQuestions[i-2].a4;
 });
 
 const colorQuestion = createQuestion("What is the best color?", "blue", "green", "yellow", "none of the above", 4);
@@ -157,5 +167,3 @@ const codingQuestion = createQuestion("What coding language is used to style HTM
 const tempQuestion = createQuestion("What temperature is boiling in Celsius?", "212", "100", "88", "none of the above", 2);
 
 const allQuestions = [colorQuestion, numberQuestion, historyQuestion, stateQuestion, codingQuestion, tempQuestion];
-
-console.log(allQuestions);
