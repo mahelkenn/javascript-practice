@@ -113,25 +113,10 @@ const submit = document.querySelector("#submit");
 const right = document.querySelector(".right");
 const wrong = document.querySelector(".wrong");
 const next = document.querySelector("#nextQuestion");
-const one = document.querySelector("#one");
-const two = document.querySelector("#two");
-const three = document.querySelector("#three");
-const four = document.querySelector("#four");
-
-console.log(one);
-
-submit.addEventListener("click", function() {
-    let value = document.querySelector('input[name="choice"]:checked').value;
-    if (value==1959) {
-        wrong.classList.add("hide");
-        right.classList.remove("hide");
-        next.classList.remove("hide");
-    }
-    else {
-        right.classList.add("hide");
-        wrong.classList.remove("hide");
-    }
-});
+const one = document.querySelector("#one1");
+const two = document.querySelector("#two2");
+const three = document.querySelector("#three3");
+const four = document.querySelector("#four4");
 
 const number = document.querySelector("#num");
 const question = document.querySelector("#question");
@@ -157,13 +142,32 @@ next.addEventListener("click", function() {
     two.innerText = allQuestions[i-2].a2;
     three.innerText = allQuestions[i-2].a3;
     four.innerText = allQuestions[i-2].a4;
+    next.classList.add("hide");
+    right.classList.add('hide');
+    console.log(i);
+    if (i == allQuestions.length()+ 1) {
+        console.log("DONE")
+    }
 });
 
 const colorQuestion = createQuestion("What is the best color?", "blue", "green", "yellow", "none of the above", 4);
 const numberQuestion = createQuestion("What is the number of completeness?", "3", "25", "7", "99", 3);
 const historyQuestion = createQuestion("When was Michele Helkenn born?", "1987", "1988", "1989", "1990", 2);
-const stateQuestion = createQuestion("What is the biggest state in the US?", "Texas", "California", "Alaska", "none of the above", 4);
+const stateQuestion = createQuestion("What is the biggest state in the US?", "Texas", "California", "Alaska", "none of the above", 3);
 const codingQuestion = createQuestion("What coding language is used to style HTML typically?", "CSS", "BSS", "LSS", "MSS", 1);
 const tempQuestion = createQuestion("What temperature is boiling in Celsius?", "212", "100", "88", "none of the above", 2);
 
 const allQuestions = [colorQuestion, numberQuestion, historyQuestion, stateQuestion, codingQuestion, tempQuestion];
+
+submit.addEventListener("click", function() {
+    let value = document.querySelector('input[name="choice"]:checked').value;
+    if (value==allQuestions[i-2].correct) {
+        wrong.classList.add("hide");
+        right.classList.remove("hide");
+        next.classList.remove("hide");
+    }
+    else {
+        right.classList.add("hide");
+        wrong.classList.remove("hide");
+    }
+});
