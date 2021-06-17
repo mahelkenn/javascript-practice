@@ -144,10 +144,6 @@ next.addEventListener("click", function() {
     four.innerText = allQuestions[i-2].a4;
     next.classList.add("hide");
     right.classList.add('hide');
-    console.log(i);
-    if (i == allQuestions.length()+ 1) {
-        console.log("DONE")
-    }
 });
 
 const colorQuestion = createQuestion("What is the best color?", "blue", "green", "yellow", "none of the above", 4);
@@ -165,6 +161,11 @@ submit.addEventListener("click", function() {
         wrong.classList.add("hide");
         right.classList.remove("hide");
         next.classList.remove("hide");
+        if (i == (allQuestions.length + 1)) {
+            next.classList.add("hide");
+            submit.classList.add("hide");
+            right.innerText = "Woohoo, you made it through the whole quiz - great job!";
+        }
     }
     else {
         right.classList.add("hide");
