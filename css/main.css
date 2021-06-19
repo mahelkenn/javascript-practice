@@ -159,11 +159,12 @@ ul {
   display: none;
 }
 
-.wrong {
+.wrong span {
   background-color: red;
 }
 
-.right {
+
+.right span {
   background-color: green;
 }
 
