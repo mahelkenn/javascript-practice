@@ -151,7 +151,7 @@ const numberQuestion = createQuestion("What is the number of completeness?", "3"
 const historyQuestion = createQuestion("When was George Washington born?", "1700", "1732", "1745", "1750", 2);
 const stateQuestion = createQuestion("What is the biggest state in the US?", "Texas", "California", "Alaska", "none of the above", 3);
 const codingQuestion = createQuestion("What coding language is used to style HTML typically?", "CSS", "BSS", "LSS", "MSS", 1);
-const tempQuestion = createQuestion("What temperature is boiling in Celsius?", "212", "100", "88", "none of the above", 2);
+const tempQuestion = createQuestion("What temperature is boiling in Celsius?", "212", "100", "87", "none of the above", 2);
 
 const allQuestions = [colorQuestion, numberQuestion, historyQuestion, stateQuestion, codingQuestion, tempQuestion];
 
