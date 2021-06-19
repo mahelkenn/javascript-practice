@@ -148,7 +148,7 @@ next.addEventListener("click", function() {
 
 const colorQuestion = createQuestion("What is the best color?", "blue", "green", "yellow", "none of the above", 4);
 const numberQuestion = createQuestion("What is the number of completeness?", "3", "25", "7", "99", 3);
-const historyQuestion = createQuestion("When was Michele Helkenn born?", "1987", "1988", "1989", "1990", 2);
+const historyQuestion = createQuestion("When was George Washington born?", "1700", "1732", "1745", "1750", 2);
 const stateQuestion = createQuestion("What is the biggest state in the US?", "Texas", "California", "Alaska", "none of the above", 3);
 const codingQuestion = createQuestion("What coding language is used to style HTML typically?", "CSS", "BSS", "LSS", "MSS", 1);
 const tempQuestion = createQuestion("What temperature is boiling in Celsius?", "212", "100", "88", "none of the above", 2);
@@ -164,7 +164,7 @@ submit.addEventListener("click", function() {
         if (i == (allQuestions.length + 1)) {
             next.classList.add("hide");
             submit.classList.add("hide");
-            right.innerText = "Woohoo, you made it through the whole quiz - great job!";
+            right.innerHTML = "<span>Woohoo, you made it through the whole quiz - great job!</span>";
         }
     }
     else {
