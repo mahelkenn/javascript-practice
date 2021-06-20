@@ -145,6 +145,7 @@ h1 {
   margin: 50px 0;
   width: 600px;
   height: 270px;
+  background-color: aqua;
 }
 
 #question {
@@ -172,4 +173,8 @@ ul {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+}
+
+.end {
+  width: 300px;
 }
