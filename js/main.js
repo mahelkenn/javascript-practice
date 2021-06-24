@@ -120,6 +120,7 @@ const four = document.querySelector("#four4");
 
 const number = document.querySelector("#num");
 const question = document.querySelector("#question");
+const end = document.querySelector(".end");
 let i = 2;
 
 const createQuestion = function(q, a1, a2, a3, a4, correct) {
@@ -164,6 +165,7 @@ submit.addEventListener("click", function() {
         if (i == (allQuestions.length + 1)) {
             next.classList.add("hide");
             submit.classList.add("hide");
+            end.classList.remove("hide");
             right.innerHTML = "<span>Woohoo, you made it through the whole quiz - great job!</span>";
         }
     }
