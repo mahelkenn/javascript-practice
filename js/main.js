@@ -165,6 +165,7 @@ submit.addEventListener("click", function() {
         if (i == (allQuestions.length + 1)) {
             next.classList.add("hide");
             submit.classList.add("hide");
+            question.innerText = "";
             end.classList.remove("hide");
             right.innerHTML = "<span>Woohoo, you made it through the whole quiz - great job!</span>";
         }
