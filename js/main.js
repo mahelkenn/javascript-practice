@@ -121,6 +121,7 @@ const four = document.querySelector("#four4");
 const number = document.querySelector("#num");
 const question = document.querySelector("#question");
 const end = document.querySelector(".end");
+const congrats = document.querySelector('.congrats');
 let i = 2;
 
 const createQuestion = function(q, a1, a2, a3, a4, correct) {
@@ -144,6 +145,7 @@ next.addEventListener("click", function() {
     three.innerText = allQuestions[i-2].a3;
     four.innerText = allQuestions[i-2].a4;
     next.classList.add("hide");
+    submit.classList.remove('hide');
     right.classList.add('hide');
 });
 
@@ -162,12 +164,17 @@ submit.addEventListener("click", function() {
         wrong.classList.add("hide");
         right.classList.remove("hide");
         next.classList.remove("hide");
+        submit.classList.add("hide");
         if (i == (allQuestions.length + 1)) {
             next.classList.add("hide");
             submit.classList.add("hide");
-            question.innerText = "";
+            question.classList.add("hide");
+            one.classList.add("hide");
+            two.classList.add("hide");
+            three.classList.add("hide");
+            four.classList.add("hide");
             end.classList.remove("hide");
-            right.innerHTML = "<span>Woohoo, you made it through the whole quiz - great job!</span>";
+            congrats.classList.remove('hide');
         }
     }
     else {

@@ -171,7 +171,7 @@ ul {
 
 #buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 20px;
 }
 
@@ -179,4 +179,10 @@ ul {
   width: 350px;
   position: absolute;
   z-index: 10;
+}
+
+.congrats {
+  background-color: aqua;
+  margin-top: 80px;
+  text-transform: uppercase;
 }
