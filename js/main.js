@@ -155,8 +155,9 @@ const historyQuestion = createQuestion("When was George Washington born?", "1700
 const stateQuestion = createQuestion("What is the biggest state in the US?", "Texas", "California", "Alaska", "none of the above", 3);
 const codingQuestion = createQuestion("What coding language is used to style HTML typically?", "CSS", "BSS", "LSS", "MSS", 1);
 const tempQuestion = createQuestion("What temperature is boiling in Celsius?", "212", "100", "87", "none of the above", 2);
+const otherQuestion = createQuestion("When is Juneteenth?", "June 20", "June 27", "June 12", "June 19", 4);
 
-const allQuestions = [colorQuestion, numberQuestion, historyQuestion, stateQuestion, codingQuestion, tempQuestion];
+const allQuestions = [colorQuestion, numberQuestion, historyQuestion, stateQuestion, codingQuestion, tempQuestion, otherQuestion];
 
 submit.addEventListener("click", function() {
     let value = document.querySelector('input[name="choice"]:checked').value;
