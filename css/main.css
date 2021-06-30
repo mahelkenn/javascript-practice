@@ -102,8 +102,8 @@ h1 {
   margin: 0px 0px 40px 0px;
 }
 
-.buttons {
-  width: 50%;
+.counter-buttons {
+  width: 30%;
   margin-bottom: 50px;
   display: flex;
   justify-content: space-between;
